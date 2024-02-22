@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import PostComment from '..';
 
 describe('Teste para o PostComment', () => {
-    it('Deve renderizar corretamente', () => {
+    test('Deve renderizar corretamente', () => {
         render(<PostComment />);
         expect(screen.getByText('Comentar')).toBeInTheDocument();
     });
